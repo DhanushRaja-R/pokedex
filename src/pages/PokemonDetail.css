@@ -1,0 +1,220 @@
+.detail-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.detail-loading-screen, .error-screen {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #e3350d;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.detail-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #222;
+}
+
+.pokemon-id {
+  font-size: 1.5rem;
+  color: #888;
+  font-weight: bold;
+}
+
+/* 2-Column Layout */
+.detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .detail-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Left Column Styling */
+.image-card {
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /* Background color is injected dynamically via inline styles */
+}
+
+.image-card img {
+  width: 100%;
+  max-width: 320px;
+  filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
+}
+
+.types-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.type-badge {
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.type-badge.small {
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+}
+
+/* Section Headers */
+.abilities-section h3, 
+.matchup-section h3, 
+.evolution-section h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* Abilities */
+.ability-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.ability-pill {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #333;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.hidden-tag {
+  color: #888;
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+
+/* Right Column: Matchups */
+.matchup-group {
+  margin-bottom: 1.8rem;
+  background: #fdfdfd;
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.matchup-group h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.type-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.none-text {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Evolution */
+.evolution-section {
+  background: #f8fbff;
+  border: 1px solid #e2edfb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.evolution-status p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.evo-link {
+  color: #e3350d;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+  background: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ffcccb;
+  transition: all 0.2s;
+}
+
+.evo-link:hover {
+  background: #e3350d;
+  color: white;
+}
+
+.detail-container {
+  background: var(--bg-card);
+  box-shadow: var(--shadow-light);
+  color: var(--text-primary);
+  /* ... */
+}
+
+.back-btn {
+  color: var(--text-primary);
+}
+
+.ability-pill, .matchup-group, .evolution-section {
+  background: var(--bg-input);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.detail-header h1, .abilities-section h3, .matchup-section h3, .evolution-section h3 {
+  color: var(--text-primary);
+}

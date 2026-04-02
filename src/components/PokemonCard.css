@@ -1,0 +1,45 @@
+.pokemon-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2));
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #eee;
+}
+
+/* Example Type Colors */
+.type-fire { background-color: #fddfdf; }
+.type-water { background-color: #def3fd; }
+.type-grass { background-color: #defde0; }
+
+.pokemon-card {
+  background: var(--bg-card); /* Changed from #ffffff */
+  color: var(--text-primary); /* Ensures text stays readable */
+  box-shadow: var(--shadow-light); /* Adaptive shadow */
+  /* ... keep your other card styles ... */
+}
+

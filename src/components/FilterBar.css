@@ -1,0 +1,87 @@
+.filter-bar {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.search-container {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+
+
+.search-container input:focus {
+  border-color: #e3350d;
+}
+
+
+
+.search-container input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  
+  /* --- ADD THESE TWO LINES --- */
+  color: #333; 
+  background-color: white;
+}
+
+.type-select {
+  padding: 0.8rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left:0.5em;
+
+  /* --- ADD THESE THREE LINES --- */
+  color: #333; 
+  background-color: white;
+  min-width: 140px; /* Gives the dropdown a nice consistent width */
+}
+
+/* Force the options inside the dropdown to have dark text too */
+.type-select option {
+  color: #333;
+  background-color: white;
+}
+
+.type-filter-container{
+    margin-left: 1rem;
+}
+
+.filter-bar {
+  background: var(--bg-card); /* Adaptive background */
+  box-shadow: var(--shadow-light);
+  /* ... */
+}
+
+.search-container input, .type-select {
+  background-color: var(--bg-input); /* Adaptive input background */
+  color: var(--text-primary); /* Adaptive text */
+  border-color: var(--border-color);
+  /* ... */
+}
+
+.type-select option {
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+}

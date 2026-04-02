@@ -1,0 +1,29 @@
+/* --- GLOBAL CSS VARIABLES --- */
+:root {
+  --bg-main: #f4f6f8;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --text-primary: #222222;
+  --text-secondary: #666666;
+  --border-color: #eeeeee;
+  --shadow-light: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+[data-theme='dark'] {
+  --bg-main: #121212;
+  --bg-card: #1e1e1e;
+  --bg-input: #2a2a2a;
+  --text-primary: #f0f0f0;
+  --text-secondary: #aaaaaa;
+  --border-color: #333333;
+  --shadow-light: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Apply the variables globally */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
