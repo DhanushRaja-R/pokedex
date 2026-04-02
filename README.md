@@ -81,12 +81,3 @@ src/
 [ ] Add native Pokémon cries (audio) to the detail page.
 
 Designed and developed by Dhanush Raja.
-
-
-### How to push this update to GitHub:
-Since you already have your terminal connected to GitHub from earlier, updating this file online is incredibly fast. Just run these three commands in your terminal (make sure you are in the `D:\projects\pokedex` folder):
-
-```bash
-git add README.md
-git commit -m "Updated README with Vercel link"
-git push
